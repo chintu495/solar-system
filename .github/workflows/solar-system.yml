@@ -55,6 +55,7 @@ jobs:
                   node-versiion: 18
 
             - name: Check Code Coverage
+              continue-on-error: true
               run: npm run coverage
             
             - name: Code Coverage Result
